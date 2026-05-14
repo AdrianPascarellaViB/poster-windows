@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distribució d'aplicacions en entorn Windows – Adrian Pascarella</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e1a2b;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: #1e3a6e;
+      border-radius: 20px;
+      padding: 48px 52px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,.5);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 11pt;
+      color: #a8d4f5;
+      margin-bottom: 20px;
+      letter-spacing: .04em;
+    }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .sub {
+      font-size: 10pt;
+      color: #a8d4f5;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,.15);
+      margin: 0 0 28px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .info-item .label {
+      font-size: 8pt;
+      opacity: .6;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .info-item .value {
+      font-size: 10pt;
+      font-weight: bold;
+      color: #d0eeff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #28a0a0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13pt;
+      font-weight: bold;
+      padding: 14px 36px;
+      border-radius: 50px;
+      transition: background .2s, transform .15s;
+      margin-bottom: 14px;
+    }
+
+    .btn:hover {
+      background: #1d8080;
+      transform: translateY(-2px);
+    }
+
+    .btn-note {
+      font-size: 8.5pt;
+      opacity: .55;
+      margin-bottom: 32px;
+    }
+
+    hr.divider2 {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,.1);
+      margin: 0 0 20px;
+    }
+
+    .cc {
+      font-size: 8pt;
+      opacity: .5;
+      line-height: 1.6;
+    }
+
+    .cc a { color: #a8d4f5; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">NF2 / UF2 · Mòdul 0488</div>
+    <h1>Distribució d'aplicacions<br>en entorn Windows</h1>
+    <p class="sub">Póster/infografia sobre entorns, generació de paquets,<br>proves, distribució i demostració en plataforma Windows.</p>
+    <hr class="divider" />
+    <div class="info-row">
+      <div class="info-item">
+        <span class="label">Autor</span>
+        <span class="value">Adrian Pascarella</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Grup</span>
+        <span class="value">DAM1</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Curs</span>
+        <span class="value">2024–2025</span>
+      </div>
+    </div>
+    <a class="btn" href="Poster_Distribucio_Windows_AdrianPascarella.pdf" download>
+      Descarrega el póster (PDF)
+    </a>
+    <p class="btn-note">Format A4 · 1 pàgina</p>
+    <hr class="divider2" />
+    <p class="cc">
+      ⊕ CC BY-NC-SA 4.0 · Adrian Pascarella ·
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">creativecommons.org</a>
+    </p>
+  </div>
+</body>
+</html>
