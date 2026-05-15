@@ -1,0 +1,111 @@
+GUIÓ PRESENTACIÓ PÓSTER – 2 MINUTS
+Distribució d'aplicacions en entorn Linux · Joan del Tio Barberà
+
+─────────────────────────────────────────────────────────────
+[INTRODUCCIÓ – ~15s]
+
+Bon dia a tots. Soc <nom>, del grup DAM1,
+i avui presentaré la distribució d'aplicacions en entorn Linux,
+el póster del qual ha fet en Joan del Tio Barberà.
+
+─────────────────────────────────────────────────────────────
+[ENTORNS DE DESENVOLUPAMENT – ~20s]
+
+Linux és el sistema operatiu de referència per al
+desenvolupament professional. Els IDE principals són
+IntelliJ IDEA per a Java i Kotlin, VS Code per a múltiples
+llenguatges, Eclipse i NetBeans. A nivell CLI, s'utilitzen
+eines com GCC, Maven, Gradle, Git i Docker.
+
+─────────────────────────────────────────────────────────────
+[GENERACIÓ DE PAQUETS – ~25s]
+
+El format destacat del póster és AppImage, el més portàtil
+de Linux: no requereix instal·lació ni privilegis
+d'administrador, i funciona a qualsevol distribució.
+Existeixen altres formats com .deb, .rpm, Snap i Flatpak.
+El procés AppImage segueix cinc passos:
+fat JAR, AppDir, AppRun, fitxer .desktop i appimagetool.
+
+─────────────────────────────────────────────────────────────
+[PROVES – ~20s]
+
+Les proves a Linux s'han d'incorporar des de l'inici,
+no com a fase final. Hi ha quatre tipus:
+unitàries amb JUnit 5 i Mockito, d'integració amb Spring,
+funcionals amb Selenium o TestFX, i de cobertura
+amb IntelliJ Coverage per mesurar el percentatge
+de codi provat.
+
+─────────────────────────────────────────────────────────────
+[DISTRIBUCIÓ – ~20s]
+
+Els canals de distribució principals són:
+Flathub per a Flatpak, amb sandbox i gran comunitat;
+GitHub Releases per a AppImage, amb control total;
+els repositoris oficials apt i dnf per a usuaris avançats;
+i PPA per a Ubuntu i Debian.
+A més, AppImageUpdate permet actualitzacions automàtiques.
+
+─────────────────────────────────────────────────────────────
+[TANCAMENT – ~10s]
+
+En resum, Linux reflecteix la seva filosofia oberta també
+en la distribució: múltiples formats, llibertat d'elecció
+i eines de qualitat des de l'inici.
+
+Gràcies.
+
+─────────────────────────────────────────────────────────────
+TEMPS APROXIMAT: 2 minuts
+CONSELL: Assenyala cada secció del póster mentre la expliques.
+─────────────────────────────────────────────────────────────
+
+
+═════════════════════════════════════════════════════════════
+PREGUNTES I RESPOSTES FREQÜENTS
+═════════════════════════════════════════════════════════════
+
+P: Per què AppImage és el format més portàtil de Linux?
+R: Perquè és un sol fitxer executable que inclou totes les
+   dependències. No requereix instal·lació ni privilegis
+   d'administrador i funciona a qualsevol distribució Linux
+   sense modificar el sistema.
+
+P: Quina diferència hi ha entre Snap, Flatpak i AppImage?
+R: Snap i Flatpak s'instal·len al sistema i s'executen
+   en un sandbox (entorn aïllat de seguretat). AppImage
+   no s'instal·la: s'executa directament. Flatpak/Flathub
+   té la comunitat més gran; Snap el gestiona Canonical
+   (Ubuntu); AppImage dona el màxim control al desenvolupador.
+
+P: Què és el sandbox i per què és important?
+R: El sandbox és un entorn aïllat que limita els permisos
+   de l'app: no pot accedir a fitxers del sistema ni a
+   recursos que no li hagin estat concedits explícitament.
+   Millora la seguretat i evita que una app maliciosa
+   faci malbé el sistema.
+
+P: Per què cal incorporar les proves des de l'inici
+   i no al final?
+R: Perquè detectar errors tard és molt més car de corregir.
+   Si s'integren des del principi (TDD o CI), cada canvi
+   es valida automàticament i es redueix el risc d'introduir
+   regressions.
+
+P: Quina diferència hi ha entre proves unitàries
+   i funcionals?
+R: Les unitàries proven un mètode de forma aïllada,
+   sense dependències externes. Les funcionals validen
+   el comportament des del punt de vista de l'usuari,
+   simulant accions reals sobre la interfície amb
+   eines com Selenium o TestFX.
+
+P: Quin canal recomanaries per distribuir una app Linux
+   a un públic general?
+R: Flathub, perquè és el repositori de Flatpak més conegut,
+   té sandbox integrat, és multiplataforma i facilita
+   que els usuaris descobreixin l'app. Per a projectes
+   de codi obert també és la millor opció de visibilitat.
+
+═════════════════════════════════════════════════════════════

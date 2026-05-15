@@ -1,0 +1,104 @@
+GUIÓ PRESENTACIÓ PÓSTER – 2 MINUTS
+Distribució d'aplicacions en entorn Android · Sam Roca
+
+─────────────────────────────────────────────────────────────
+[INTRODUCCIÓ – ~15s]
+
+Bon dia a tots. Soc <nom>, del grup DAM1,
+i avui presentaré la distribució d'aplicacions en entorn Android,
+el póster del qual ha fet en Sam Roca.
+
+─────────────────────────────────────────────────────────────
+[ENTORNS DE DESENVOLUPAMENT – ~20s]
+
+L'entorn principal per a Android és Android Studio,
+l'IDE oficial de Google. Integra tot el que necessites:
+editor de codi, emulador, sistema de build, eines de profilatge,
+Lint i suport per a GitHub i proves. És la referència
+per a qualsevol desenvolupador Android.
+
+─────────────────────────────────────────────────────────────
+[GENERACIÓ DE PAQUETS – ~25s]
+
+Per empaquetar una aplicació Android, el format recomanat
+avui dia és l'Android App Bundle, o AAB.
+El flux és: primer es genera una APK, s'utilitza un keystore
+per signar l'aplicació, es defineix la signatura
+i finalment s'exporta el fitxer AAB. Aquest format permet
+que la Play Store optimитзi la descàrrega per a cada dispositiu.
+
+─────────────────────────────────────────────────────────────
+[PROVES – ~20s]
+
+Quant a les proves, el póster distingeix quatre tipus:
+proves de lògica, que verifiquen el comportament intern;
+proves instrumentades, que s'executen en dispositiu real
+o emulador; proves de sistema; i proves d'interacció
+amb la interfície, que simulen les accions de l'usuari.
+
+─────────────────────────────────────────────────────────────
+[DISTRIBUCIÓ – ~20s]
+
+La via principal de distribució és Google Play.
+El procés té set passos: crear un compte de desenvolupador,
+preparar la fitxa de l'app, pujar el fitxer AAB,
+configurar la signatura, redactar la política de privacitat,
+definir la classificació de contingut i preus,
+i finalment enviar la versió a revisió.
+
+─────────────────────────────────────────────────────────────
+[TANCAMENT – ~10s]
+
+En resum, Android ofereix un ecosistema molt complet,
+amb Google Play com a canal central de distribució.
+
+Gràcies.
+
+─────────────────────────────────────────────────────────────
+TEMPS APROXIMAT: 2 minuts
+CONSELL: Assenyala cada secció del póster mentre la expliques.
+─────────────────────────────────────────────────────────────
+
+
+═════════════════════════════════════════════════════════════
+PREGUNTES I RESPOSTES FREQÜENTS
+═════════════════════════════════════════════════════════════
+
+P: Quina diferència hi ha entre APK i AAB?
+R: L'APK és el format tradicional: un sol fitxer que conté
+   tot el codi per a tots els dispositius. L'AAB és el format
+   modern: Google Play l'optimitza i genera una APK específica
+   per a cada dispositiu, reduint la mida de la descàrrega.
+
+P: Per què cal signar l'aplicació? Què passa si no es signa?
+R: La signatura garanteix l'autenticitat: certifica que l'app
+   no ha estat manipulada i identifica el desenvolupador.
+   Sense signatura, Google Play rebutja l'app i Android
+   no la deixa instal·lar.
+
+P: Què és el keystore i on s'ha de guardar?
+R: El keystore és un fitxer que conté la clau privada de
+   signatura. S'ha de guardar en un lloc segur i fer-ne
+   còpia de seguretat, perquè si es perd no es poden
+   publicar actualitzacions de l'app a la mateixa fitxa
+   de Play Store.
+
+P: Es pot distribuir una app Android sense Google Play?
+R: Sí, mitjançant sideloading: l'usuari activa la instal·lació
+   d'orígens desconeguts i instal·la l'APK directament.
+   També existeixen botigues alternatives com F-Droid
+   (per a apps de codi obert) o Amazon Appstore.
+
+P: Quant costa publicar a Google Play?
+R: Hi ha una quota única de registre de 25 dòlars.
+   A diferència d'Apple, no és una subscripció anual.
+
+P: Quina diferència hi ha entre proves instrumentades
+   i proves de lògica?
+R: Les proves de lògica (o unitàries) s'executen a la JVM
+   de l'ordinador, sense necessitat de dispositiu, i proven
+   funcions aïllades. Les instrumentades s'executen en un
+   dispositiu real o emulador i poden accedir a la interfície
+   i als components d'Android.
+
+═════════════════════════════════════════════════════════════

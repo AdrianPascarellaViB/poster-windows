@@ -1,0 +1,62 @@
+GUIÓ PRESENTACIÓ PÓSTER – 2 MINUTS
+Distribució d'aplicacions en entorn Windows · <nom>
+
+─────────────────────────────────────────────────────────────
+[INTRODUCCIÓ – ~15s]
+
+Bon dia a tots. Soc <nom>, del grup DAM1,
+i avui presentaré la distribució d'aplicacions en entorn Windows.
+
+─────────────────────────────────────────────────────────────
+[ENTORNS DE DESENVOLUPAMENT – ~20s]
+
+Primer, els entorns. A Windows tenim tres IDE principals:
+Visual Studio 2022, que és el més complet per a WPF, WinForms
+i WinUI 3; VS Code, més lleuger; i JetBrains Rider.
+Quant a frameworks, els més importants són WPF, WinForms,
+.NET MAUI per a multiplataforma, i WinUI 3, que és el més modern.
+
+─────────────────────────────────────────────────────────────
+[GENERACIÓ DE PAQUETS – ~25s]
+
+Per empaquetar una aplicació Windows, l'eina estàndard
+és MSIX amb Visual Studio 2022. El procés té sis passos:
+crear el projecte .NET, afegir el projecte d'empaquetament,
+configurar el manifest amb nom i icones, crear un certificat
+de signatura, generar el paquet, i instal·lar-lo amb
+Add-AppxPackage. Com a alternativa també tenim Inno Setup,
+que genera un instal·lador .exe més tradicional.
+
+─────────────────────────────────────────────────────────────
+[PROVES – ~20s]
+
+Quant a les proves, n'hi ha quatre tipus principals:
+les unitàries amb MSTest o xUnit, que verifiquen mètodes de
+forma aïllada; les d'integració amb Moq; les de interfície
+amb WinAppDriver, que simulen accions de l'usuari; i les
+de rendiment amb BenchmarkDotNet, integrades en pipelines
+de CI amb GitHub Actions.
+
+─────────────────────────────────────────────────────────────
+[DISTRIBUCIÓ – ~20s]
+
+Per distribuir l'aplicació tenim tres vies:
+la Microsoft Store, que requereix registre al Partner Center
+i revisió de Microsoft; el sideloading, que permet distribuir
+el .msix directament per web o GitHub Releases; i el canal
+empresarial, amb eines com Intune, SCCM o Winget per a
+desplegaments massius.
+
+─────────────────────────────────────────────────────────────
+[TANCAMENT – ~20s]
+
+Al póster també trobareu dos vídeos de demostració recomanats
+i la bibliografia. Si voleu descarregar-vos el PDF, podeu
+escanejar el QR de la cantonada superior esquerra.
+
+Gràcies.
+
+─────────────────────────────────────────────────────────────
+TEMPS APROXIMAT: 2 minuts
+CONSELL: Assenyala cada secció del póster mentre la expliques.
+─────────────────────────────────────────────────────────────

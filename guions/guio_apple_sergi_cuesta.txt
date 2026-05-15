@@ -1,0 +1,117 @@
+GUIÓ PRESENTACIÓ PÓSTER – 2 MINUTS
+Distribució d'Aplicacions Apple · Sergi Cuesta Vidal
+
+─────────────────────────────────────────────────────────────
+[INTRODUCCIÓ – ~15s]
+
+Bon dia a tots. Soc <nom>, del grup DAM1,
+i avui presentaré la distribució d'aplicacions Apple,
+el póster del qual ha fet en Sergi Cuesta Vidal.
+
+─────────────────────────────────────────────────────────────
+[ENTORNS DE DESENVOLUPAMENT – ~20s]
+
+L'IDE oficial d'Apple és Xcode, l'únic que permet
+publicar a l'App Store. Requereix macOS 13 o superior
+i els llenguatges principals són Swift i SwiftUI.
+Com a eines complementàries tenim Swift Playgrounds
+per a prototips, el Swift Package Manager per a
+dependències, i entorns multiplataforma com Flutter
+o React Native.
+
+─────────────────────────────────────────────────────────────
+[GENERACIÓ DE PAQUETS – ~25s]
+
+El procés de generació va des del codi font fins
+a l'instal·lable final, gestionat des de l'Organizer
+de Xcode o via CLI amb xcodebuild.
+El flux és: codi, compilació, arxivat en format
+.xcarchive, exportació com a .ipa,
+i finalment pujada a App Store Connect.
+És indispensable usar certificats i Provisioning Profiles
+per a la identitat i els permisos de l'app.
+
+─────────────────────────────────────────────────────────────
+[PROVES – ~20s]
+
+Les proves s'organitzen en quatre tipus amb XCTest:
+Unit Tests per a funcions aïllades sense xarxa;
+Integration Tests per a múltiples mòduls junts;
+UI Tests, on Xcode grava i simula accions d'usuari;
+i proves de Performance per mesurar temps de càrrega
+i ús de memòria. L'automatització es fa amb
+Xcode Cloud o GitHub Actions.
+
+─────────────────────────────────────────────────────────────
+[DISTRIBUCIÓ – ~20s]
+
+Hi ha cinc canals de distribució:
+l'App Store, el canal oficial global amb revisió prèvia
+i quota de 99 dòlars anuals; TestFlight, per a proves
+beta amb fins a 10.000 usuaris externs; Ad Hoc,
+distribució privada a 100 dispositius; Enterprise,
+per a distribució corporativa interna; i macOS Direct,
+distribució per web amb Notarization de Gatekeeper.
+
+─────────────────────────────────────────────────────────────
+[TANCAMENT – ~10s]
+
+En resum, Apple té un ecosistema molt tancat però
+ben definit, on App Store Connect centralitza
+tot el cicle de publicació.
+
+Gràcies.
+
+─────────────────────────────────────────────────────────────
+TEMPS APROXIMAT: 2 minuts
+CONSELL: Assenyala cada secció del póster mentre la expliques.
+─────────────────────────────────────────────────────────────
+
+
+═════════════════════════════════════════════════════════════
+PREGUNTES I RESPOSTES FREQÜENTS
+═════════════════════════════════════════════════════════════
+
+P: Per què Xcode és l'únic IDE que permet publicar
+   a l'App Store?
+R: Perquè Apple ho restringeix per disseny: el procés
+   de signatura, arxivat i pujada a App Store Connect
+   requereix les eines propietàries d'Apple integrades
+   a Xcode. Es pot escriure codi en altres editors,
+   però la publicació final sempre passa per Xcode.
+
+P: Què és un Provisioning Profile i per a què serveix?
+R: És un fitxer que vincula l'app, el desenvolupador i
+   els dispositius autoritzats. Defineix quins permisos
+   té l'app i en quins dispositius es pot executar.
+   Sense un Provisioning Profile vàlid, l'app no es pot
+   instal·lar ni publicar.
+
+P: Quina diferència hi ha entre l'App Store i TestFlight?
+R: L'App Store és el canal de distribució públic i final,
+   amb revisió estricta d'Apple. TestFlight és la
+   plataforma oficial per a proves beta: permet distribuir
+   l'app a fins a 10.000 usuaris externs sense passar
+   la revisió completa, ideal per recollir feedback
+   abans del llançament.
+
+P: Quant costa publicar a l'App Store?
+R: Cal pagar una quota de 99 dòlars anuals al programa
+   Apple Developer. Per a distribució empresarial interna
+   (Enterprise) la quota és de 299 dòlars anuals.
+
+P: Quin és el flux complet des del codi fins a la
+   publicació a l'App Store?
+R: Codi → Compilació a Xcode → Arxivat (.xcarchive) →
+   Export com a .ipa → Pujada a App Store Connect →
+   Revisió d'Apple → Publicació. El procés de revisió
+   sol trigar entre 24 i 48 hores.
+
+P: Què és la Notarization de Gatekeeper i quan cal?
+R: És un procés d'Apple per verificar que una app
+   distribuïda fora de l'App Store (per web, en macOS)
+   no conté malware. Apple escaneig l'app i emet
+   un tiquet de notarització. Sense ella, Gatekeeper
+   la bloqueja per defecte a macOS.
+
+═════════════════════════════════════════════════════════════

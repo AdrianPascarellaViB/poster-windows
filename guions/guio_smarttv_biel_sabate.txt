@@ -1,0 +1,112 @@
+GUIÓ PRESENTACIÓ PÓSTER – 2 MINUTS
+Distribució d'aplicacions en entorn SmartTV · Biel Sabaté
+
+─────────────────────────────────────────────────────────────
+[INTRODUCCIÓ – ~15s]
+
+Bon dia a tots. Soc <nom>, del grup DAM1,
+i avui presentaré la distribució d'aplicacions en entorn SmartTV,
+el póster del qual ha fet en Biel Sabaté.
+
+─────────────────────────────────────────────────────────────
+[ENTORNS DE DESENVOLUPAMENT – ~25s]
+
+L'entorn de desenvolupament per a SmartTV de Samsung
+es basa en tres eines principals:
+Tizen Studio IDE per a la creació i edició del codi,
+el TV Simulator per a la depuració de l'aplicació,
+i el TV Emulator per provar-la sense necessitat
+d'un dispositiu físic.
+
+─────────────────────────────────────────────────────────────
+[GENERACIÓ DE PAQUETS – ~25s]
+
+L'empaquetat de l'aplicació segueix quatre passos:
+primer es configura el paquet i les metadades,
+després s'assignen els permisos necessaris,
+es configura el certificat de signatura,
+i finalment es genera i desplegua el paquet
+en format .wgt, que és el format estàndard de Tizen.
+
+─────────────────────────────────────────────────────────────
+[PROVES – ~20s]
+
+Per garantir la qualitat de l'aplicació s'utilitzen
+QA tests, que inclouen proves de rendiment
+i de comportament de la interfície sobre el simulador
+i l'emulador de TV. L'objectiu és verificar
+que l'app funciona correctament abans de pujar-la
+a la botiga oficial.
+
+─────────────────────────────────────────────────────────────
+[DISTRIBUCIÓ – ~20s]
+
+La distribució comercial es fa a través de
+Samsung Apps Seller Office, la plataforma oficial
+de Samsung per publicar aplicacions a les seves SmartTV.
+El procés inclou registrar-se com a desenvolupador,
+enviar l'app i superar la revisió de Samsung.
+
+─────────────────────────────────────────────────────────────
+[TANCAMENT – ~10s]
+
+En resum, el desenvolupament per a SmartTV és un entorn
+molt específic, amb eines pròpies de Samsung i
+un cicle de distribució tancat a través de la seva botiga.
+
+Gràcies.
+
+─────────────────────────────────────────────────────────────
+TEMPS APROXIMAT: 2 minuts
+CONSELL: Assenyala cada secció del póster mentre la expliques.
+─────────────────────────────────────────────────────────────
+
+
+═════════════════════════════════════════════════════════════
+PREGUNTES I RESPOSTES FREQÜENTS
+═════════════════════════════════════════════════════════════
+
+P: Què és Tizen i per què l'utilitza Samsung?
+R: Tizen és el sistema operatiu propi de Samsung basat
+   en Linux. Samsung l'utilitza a les seves SmartTV perquè
+   li dona control total sobre l'ecosistema, optimitza
+   el rendiment per al hardware propi i permet gestionar
+   la botiga d'aplicacions de forma independent.
+
+P: Què és el format .wgt?
+R: És el format de paquet estàndard de Tizen per a
+   aplicacions web (basat en HTML5, CSS i JavaScript).
+   Equival a un ZIP amb estructura específica que conté
+   el codi, els recursos i el manifest de l'aplicació.
+
+P: Per què cal un certificat per desplegar l'app?
+R: El certificat identifica el desenvolupador i garanteix
+   que l'app no ha estat manipulada. Tizen en requereix
+   un per a proves (distribuït per Samsung) i un altre
+   per a producció a la botiga oficial.
+
+P: Quina diferència hi ha entre el TV Simulator
+   i el TV Emulator?
+R: El Simulator executa l'app en un entorn web del
+   propi ordinador, és ràpid però menys precís.
+   L'Emulator simula el hardware real de la TV,
+   és més lent però reprodueix millor el comportament
+   en producció.
+
+P: Com es distribueix una app per a SmartTV
+   si no és a la botiga de Samsung?
+R: Les opcions fora de la botiga oficial són molt
+   limitades. Es pot fer un desplegament directe
+   durant el desenvolupament activant el mode
+   desenvolupador a la TV i usant Tizen Studio,
+   però per arribar als usuaris finals cal passar
+   per Samsung Apps Seller Office sí o sí.
+
+P: Quins llenguatges s'utilitzen per desenvolupar
+   apps per a SmartTV Samsung?
+R: Principalment HTML5, CSS3 i JavaScript, ja que
+   les apps de Tizen per a TV són aplicacions web
+   empaquetades. No s'utilitza Swift ni Kotlin:
+   és un ecosistema web, similar a una PWA.
+
+═════════════════════════════════════════════════════════════
